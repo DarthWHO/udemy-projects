@@ -1,12 +1,16 @@
 import Skill from "./Skill";
 
+const skillsData = [
+  { skill: "React", level: "intermediate", color: "lightblue" },
+  { skill: "HTML+CSS", level: "intermediate", color: "orange" },
+  { skill: "JavaScript", level: "intermediate", color: "yellow" },
+  { skill: "Python", level: "advanced", color: "orangered" },
+];
+
 export default function SkillList() {
-  return (
-    <div className="skill-list">
-      <Skill skill="React" emoji="💪" color="lightblue" />
-      <Skill skill="HTML+CSS" emoji="💪" color="orange" />
-      <Skill skill="JavaScript" emoji="💪" color="yellow" />
-      <Skill skill="Svelte" emoji="👶" color="orangered" />
-    </div>
-  );
+  const skills = skillsData.map(({ skill, level, color }) => (
+    <Skill key={skill} skill={skill} level={level} color={color} />
+  ));
+
+  return <div className="skill-list">{skills}</div>;
 }
