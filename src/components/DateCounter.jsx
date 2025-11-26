@@ -16,7 +16,7 @@ export default function DateCounter() {
   }
 
   function handleCountChangeUp() {
-    setCount((current) => setCount( current + step));
+    setCount((current) => setCount(current + step));
   }
 
   function handleCountChangeDown() {
@@ -28,10 +28,14 @@ export default function DateCounter() {
     setCount(0);
   }
 
+  function handleChange(event) {
+    setCount(Number(event.target.value));
+  }
+
   return (
     <div className="container">
       <h1>Date Calculator</h1>
-      <DateButton direction="reset" handler={handleReset} />
+
       <div className="button-container">
         <DateButton direction="&minus;" handler={handleStepChangeDown} />
         <h2>Step: {step}</h2>
@@ -39,10 +43,15 @@ export default function DateCounter() {
       </div>
       <div className="button-container">
         <DateButton direction="&minus;" handler={handleCountChangeDown} />
-        <h2>Count: {count}</h2>
+        <input type="text" value={count} onChange={() => handleChange(event)} />
         <DateButton direction="+" handler={handleCountChangeUp} />
       </div>
       <DateCounterMessage count={count} />
+      {step == 1 && count == 0 ? (
+        <></>
+      ) : (
+        <DateButton direction="reset" handler={handleReset} />
+      )}
     </div>
   );
 }

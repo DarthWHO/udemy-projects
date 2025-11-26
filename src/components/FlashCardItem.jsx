@@ -4,7 +4,7 @@ export default function FlashCardItem({ item, selected, handleClick }) {
       className={item.id == selected ? "selected" : ""}
       onClick={() => handleClick(item.id)}
     >
-      {item.id == selected ? item.answer : item.question}
+      <p>{item.id == selected ? item.answer : item.question}</p>
     </div>
   );
 }

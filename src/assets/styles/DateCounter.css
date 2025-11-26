@@ -9,6 +9,7 @@
   display: grid;
   width: 250px;
   text-align: center;
+  align-items: center;
   grid-template-columns: 1fr 5fr 1fr;
 }
 
@@ -16,4 +17,24 @@
   font-size: 1.6rem;
   font-weight: normal;
   color: #333;
+}
+
+input[type="text"] {
+  justify-self: center;
+  width: 80%;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
 }

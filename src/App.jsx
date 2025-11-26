@@ -8,8 +8,8 @@ export default function App() {
   // return <SkillCard />;
 
   // Next Project
-  // return <DateCounter />;
+  return <DateCounter />;
 
   // FlashCards Project
-  return <FlashCards />;
+  // return <FlashCards />;
 }
