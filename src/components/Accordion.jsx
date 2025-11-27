@@ -18,14 +18,23 @@ const faqs = [
 ];
 
 export default function Accordion() {
+  const [openFaq, setOpenFaq] = useState(null);
+
+  function handleToggle(num) {
+    setOpenFaq(openFaq === num ? null : num);
+  }
+
   const accordionItems = faqs.map((faq, index) => {
     return (
       <AccordionItem
         key={index}
         num={index + 1}
         question={faq.title}
-        answer={faq.text}
-      />
+        openFaq={openFaq}
+        onOpen={() => handleToggle(index + 1)}
+      >
+        {faq.text}
+      </AccordionItem>
     );
   });
 
