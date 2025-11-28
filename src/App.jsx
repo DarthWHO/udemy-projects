@@ -3,6 +3,7 @@ import SkillCard from "./components/SkillCard";
 import DateCounter from "./components/DateCounter";
 import FlashCards from "./components/FlashCards";
 import Accordion from "./components/Accordion";
+import TipCalculator from "./components/TipCalculator";
 
 export default function App() {
   // SkillCard Project
@@ -15,5 +16,8 @@ export default function App() {
   // return <FlashCards />;
 
   // Accordion Project
-  return <Accordion />;
+  // return <Accordion />;
+
+  // Tip Calculator Project
+  return <TipCalculator />;
 }
