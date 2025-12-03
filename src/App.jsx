@@ -1,10 +1,10 @@
-import { useState } from "react";
 // import SkillCard from "./components/SkillCard";
 // import DateCounter from "./components/DateCounter";
 // import FlashCards from "./components/FlashCards";
 // import Accordion from "./components/Accordion";
 // import TipCalculator from "./components/TipCalculator";
-import TextExpanderStarter from "./components/TextExpanderStarter";
+// import TextExpanderStarter from "./components/TextExpanderStarter";
+import CurrencyConverter from "./components/CurrencyConverter";
 
 export default function App() {
   // SkillCard Project
@@ -23,5 +23,8 @@ export default function App() {
   // return <TipCalculator />;
 
   // Text Expander Project
-  return <TextExpanderStarter />;
+  // return <TextExpanderStarter />;
+
+  // Currentcy Converter Project
+  return <CurrencyConverter />;
 }
