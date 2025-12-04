@@ -4,7 +4,8 @@
 // import Accordion from "./components/Accordion";
 // import TipCalculator from "./components/TipCalculator";
 // import TextExpanderStarter from "./components/TextExpanderStarter";
-import CurrencyConverter from "./components/CurrencyConverter";
+// import CurrencyConverter from "./components/CurrencyConverter";
+import GeoLocation from "./components/GeoLocation";
 
 export default function App() {
   // SkillCard Project
@@ -26,5 +27,8 @@ export default function App() {
   // return <TextExpanderStarter />;
 
   // Currentcy Converter Project
-  return <CurrencyConverter />;
+  // return <CurrencyConverter />;
+
+  // GeoLocation Project
+  return <GeoLocation />;
 }
