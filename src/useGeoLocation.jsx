@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export function useGeolocation() {
   const [isLoading, setIsLoading] = useState(false);
@@ -25,7 +25,5 @@ export function useGeolocation() {
     );
   }
 
-  getPosition();
-
-  return { isLoading, position, error };
+  return { isLoading, position, error, getPosition };
 }
