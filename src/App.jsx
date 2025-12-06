@@ -5,7 +5,8 @@
 // import TipCalculator from "./components/TipCalculator";
 // import TextExpanderStarter from "./components/TextExpanderStarter";
 // import CurrencyConverter from "./components/CurrencyConverter";
-import GeoLocation from "./components/GeoLocation";
+// import GeoLocation from "./components/GeoLocation";
+import BankAccount from "./components/BankAccount";
 
 export default function App() {
   // SkillCard Project
@@ -30,5 +31,8 @@ export default function App() {
   // return <CurrencyConverter />;
 
   // GeoLocation Project
-  return <GeoLocation />;
+  // return <GeoLocation />;
+
+  // Bank Account Project
+  return <BankAccount />;
 }
